@@ -1,0 +1,206 @@
+#titulo {
+    color: tomato;
+}
+
+p.especial {
+    color: mediumseagreen;
+}
+
+p.texto {
+    color: slateblue;
+}
+
+div p {  
+    color: aquamarine;
+     
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    color: black;
+}
+
+/*esto es un comentario */
+
+/*
+
+.color {
+    color: #ff0000;
+
+}
+.color {
+    color: rgb(0,255,255);
+}
+*/
+
+.color {
+    /* border: 5px red ridge;*/
+    /*  
+        dotted
+        dashed
+        solid
+        double
+        groove ,borde con profundidad
+        ridge ,borde con profundidad
+        inset ,borde degradé
+        outset , borde degradé
+        none
+        hidden
+
+*/
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;           /*borde redondeado*/
+    border-width: 5px;            /* ancho de borde */
+
+}
+
+#fondo {
+    background-color: rgb(191, 155, 96);  /*color transparente*/
+   /* opacity: 0.3;   
+}   */
+    /* intensidad de trasparencia valor entre 0 y 1*/
+
+
+    height: 200px;
+
+
+
+   background: #f00 url('coffee.png')repeat-y center bottom / 100px 100px;
+
+    
+    background-size: 100px 100px;
+
+
+}
+
+
+
+/* background-repeat: repeat-x;   <--imagen se repite en el eje horizontal-->
+
+background-repeat: repeat-y;     <--imagen se repite en el eje vertical-->
+
+*/
+
+
+/* 
+background-position-x:  tleftop;     <--imagen a la izquierda-->
+
+background-position-x: right;        <--imagen a la derecha-->
+
+background-position-x: center;       <--imagen al centro--> 
+*/
+
+
+.margen {   
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;    /* margen interior, entre texto y cuadro ,
+    (top, derecha,abajo,izquierda)*/
+
+    border: solid 1px black;
+    height: 200px;     /* alto */
+    width: 50px;        /*ancho*/
+    overflow: scroll;   /*barra*/
+    outline: 1px solid red;
+
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px rgb(13, 0, 255);
+}
+
+/*
+text-decoration: underline;    <--texto subrayado-->
+
+text-decoration: line-through;  <--texto tachado-->
+
+  text-decoration: overline;     <--linea arriba del texto-->
+
+  text-shadow: 3px 5px;   <-- texto duplicaco hacia 
+
+  abajo y a la derecha-->
+
+text-shadow: 3px 5px 5px blue;   <--texto con sombra azul -->
+*/
+
+
+  a:link {
+      color: blueviolet;     /*color al lin no visitado*/
+  }
+
+  a:visited {
+        color: gray;       /* color gris al link visitado*/
+  }
+
+  a:hover {                   /* cuando paso el mouse por arriba*/
+       color: yellow; 
+    
+  }
+
+  a:active {                /*cuando pincho el link*/
+      color: red;
+  }
+ /* es importante seguir este orden  de selectores  de un link:
+         link,
+         visited,
+         hover,
+         active
+         
+  */
+  ul {
+      background-color: cyan;
+      /* list-style-type: none;   
+      padding-left: 0; */
+      /* list-style-position: inside; */
+
+  }
+
+
+ /*  table {
+      width: 100%;       <--tabla 1 con espacio entre celdas-->
+  }
+
+  th, td {
+      border: solid 1px #eee;
+  }
+ */    
+
+
+
+ table {
+    width: 100%;  
+    border-collapse: collapse;     
+
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;   
+}
+
+th {
+    background-color: tomato;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(197, 177, 126);    /* color fila por medio*/
+}
+
+
+
+
+
+tr:hover {
+    background-color: rgb(86, 82, 82);   /*color gris fuerte al pasar cursor*/
+    cursor: pointer;                     /*cursor manito*/
+}
+
